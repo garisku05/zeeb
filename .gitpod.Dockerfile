@@ -1,6 +1,6 @@
 FROM gitpod/workspace-full
 RUN bash -c ". /home/gitpod/.sdkman/bin/sdkman-init.sh \ 
-               && sdk install java 8.0.222.j9-adapt"
+RUN sdk install java 8.0.222.j9-adapt"
 USER root
 RUN sudo apt-get update
 RUN wget https://raw.githubusercontent.com/akhilnarang/scripts/master/setup/android_build_env.sh && chmod +x android_build_env.sh && ./android_build_env.sh
